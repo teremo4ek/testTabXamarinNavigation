@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tabtest.Pages.SecondPage">
+
+  <TabbedPage.Children>
+    <ContentPage
+      Title="First">
+
+      <StackLayout
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="FillAndExpand"
+      >
+        <BoxView
+          HeightRequest="300"
+          BackgroundColor="Yellow"/>
+
+        <StackLayout
+          Orientation="Horizontal"
+          BackgroundColor="Gray">
+          <Label
+            HorizontalOptions="Center"
+            Font = "Small"
+            Text="Page2"
+            TextColor="Green"
+          />
+        </StackLayout>
+
+
+        <BoxView
+          BackgroundColor="Red"
+          VerticalOptions="FillAndExpand"
+        />
+      </StackLayout>
+    </ContentPage>
+
+    <ContentPage
+      Title="second">
+
+      <Label
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Text="For test"
+        TextColor="Fuchsia"/>
+
+    </ContentPage>
+  </TabbedPage.Children>
+
+</TabbedPage>

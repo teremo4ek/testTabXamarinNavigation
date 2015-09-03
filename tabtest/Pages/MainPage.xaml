@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="tabtest.MainPage">
+	<ContentPage.Content>
+	</ContentPage.Content>
+	
+  <StackLayout
+    HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand"
+    >
+    <BoxView
+      HeightRequest="100"
+      BackgroundColor="Green"/>
+
+    <StackLayout
+      Orientation="Horizontal"
+      BackgroundColor="Aqua">
+      <Label
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        Font = "Small"
+        Text="Press the button"
+        TextColor="Red"
+      />
+      <Button 
+        Text="Click me"
+        TextColor="White"
+        BackgroundColor="Gray"
+        Clicked="Button_OnClicked"
+        />
+    </StackLayout>
+  
+
+    <BoxView
+      BackgroundColor="Blue"
+      VerticalOptions="FillAndExpand"
+    />
+  </StackLayout>
+  
+</ContentPage>
